@@ -4,16 +4,12 @@ Welcome to my personal portfolio! This repository contains the projects I've wor
 
 ## Table of Contents
 - [Home](#home)
-- [Projects](#projects)
 - [Contact](#contact)
 
 ## Home
 
-Welcome to my portfolio! Here you'll find a showcase of my work and projects. I'm passionate about [your interests or field], and this portfolio is a testament to my journey and achievements in this area.
+Welcome to my portfolio! Here you'll find a showcase of my work and projects. I'm passionate about Core Python, DSA,  and this portfolio is a testament to my journey and achievements in this area.
 
-## Projects
-
-**Description:** List of the project which uploaded on github account.
 
 ## Contact
 
