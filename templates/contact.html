@@ -1,0 +1,47 @@
+<!-- templates/contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Krupesh Patel</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('portfolio_bp.landing_page') }}">Home</a></li>
+                <li><a href="{{ url_for('portfolio_bp.projects') }}">Projects</a></li>
+                <li><a href="{{ url_for('portfolio_bp.contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Information</h1>
+            <p><strong>Email:</strong> {{ user['email'] }}</p>
+            <p><strong>Mobile No:</strong> {{ user['mobile_no'] }}</p>
+            <p><strong>LinkedIn:</strong> <a href="{{ user['linkedin_url'] }}" target="_blank">{{ user['linkedin_url']}}</a></p>
+            <p><strong>GitHub:</strong> <a href="{{ user['github_url'] }}" target="_blank">{{ user['github_url'] }}</a></p>
+            <p><strong>Medium:</strong> <a href="{{ user['medium_url'] }}" target="_blank">{{ user['medium_url'] }}</a></p>
+        </div>
+    </main>
+    <footer>
+        <a href="https://in.linkedin.com/in/krupesh-patel-240886239" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://github.com/krupeshgithub" target="_blank" title="GitHub">
+            <i class="fab fa-github fa-2x"></i>
+        </a>
+        <p>Copyright © 2024</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/contact.js') }}"></script>
+</body>
+</html>
